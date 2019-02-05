@@ -10,7 +10,7 @@ class math_1:
     def division(self):
         user_input = input("Insert the number->")
         if user_input == 0:
-            return ZeroDivisionError
+            raise ZeroDivisionError
         else:
             return [i/int(user_input) for i in self.mathematics]
 
